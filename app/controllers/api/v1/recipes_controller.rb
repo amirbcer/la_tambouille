@@ -1,22 +1,13 @@
 class Api::V1::RecipesController < ApplicationController
   allow_unauthenticated_access
-  before_action :set_recipe, only: %i[ show ]
 
   # GET /recipes
   def index
-    @recipes = Recipe.all
-
-    render json: @recipes
+    @recipes = Recipe.order(id: :desc).page(params[:page])
   end
 
-  # GET /recipes/1
+  # GET /recipes/:id
   def show
-    render json: @recipe
+    @recipe = Recipe.find(params[:id])
   end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_recipe
-      @recipe = Recipe.find(params.expect(:id))
-    end
 end
