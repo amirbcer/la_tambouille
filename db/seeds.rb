@@ -7,3 +7,27 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+#
+puts "Seeding database '#{ActiveRecord::Base.connection.current_database}'"
+
+# Create a user
+User.create(
+  email_address: "test@latambouille.com",
+  password_digest: "latambouille69",
+  name: "Johnny Love"
+)
+
+# Create recipes
+file = File.read File.join(__dir__, "seeds.json")
+recipes = JSON.parse(file, symbolize_names: true)
+
+recipes.each do |recipe|
+  Recipe.create(
+    title: recipe[:title],
+    picture: recipe[:picture],
+    ingredients: recipe[:ingredients],
+    steps: recipe[:steps],
+    description: recipe[:description],
+    user_id: recipe[:user_id]
+  )
+end

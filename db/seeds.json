@@ -1,0 +1,705 @@
+[
+  {
+    "title": "Quiche Lorraine",
+    "picture": "https://example.com/images/quiche_lorraine.jpg",
+    "ingredients": [
+      "pâte brisée",
+      "lardons",
+      "œufs",
+      "crème fraîche",
+      "fromage râpé",
+      "poivre",
+      "sel"
+    ],
+    "steps": [
+      "Étaler la pâte dans un moule à tarte.",
+      "Faire revenir les lardons dans une poêle.",
+      "Battre les œufs avec la crème et le fromage râpé.",
+      "Ajouter les lardons et assaisonner.",
+      "Verser la préparation sur la pâte et enfourner à 180°C pendant 30 minutes."
+    ],
+    "description": "Une délicieuse quiche classique, parfaite pour un repas rapide et savoureux.",
+    "user_id": 1
+  },
+  {
+    "title": "Bœuf Bourguignon",
+    "picture": "https://example.com/images/boeuf_bourguignon.jpg",
+    "ingredients": [
+      "bœuf",
+      "carottes",
+      "oignons",
+      "vin rouge",
+      "bouquet garni",
+      "ail",
+      "lardons",
+      "champignons"
+    ],
+    "steps": [
+      "Faire revenir les morceaux de bœuf dans une cocotte.",
+      "Ajouter les oignons, carottes et lardons.",
+      "Verser le vin rouge et ajouter le bouquet garni.",
+      "Laisser mijoter à feu doux pendant 2 heures.",
+      "Ajouter les champignons et cuire encore 30 minutes."
+    ],
+    "description": "Un plat traditionnel français à base de viande de bœuf mijotée dans du vin rouge.",
+    "user_id": 1
+  },
+  {
+    "title": "Ratatouille",
+    "picture": "https://example.com/images/ratatouille.jpg",
+    "ingredients": [
+      "courgettes",
+      "aubergines",
+      "tomates",
+      "poivrons",
+      "oignons",
+      "ail",
+      "huile d'olive",
+      "herbes de Provence"
+    ],
+    "steps": [
+      "Couper tous les légumes en morceaux.",
+      "Faire revenir les oignons et l'ail dans l'huile d'olive.",
+      "Ajouter les légumes et les herbes.",
+      "Laisser mijoter pendant 40 minutes."
+    ],
+    "description": "Un plat provençal léger et savoureux, parfait pour accompagner viandes et poissons.",
+    "user_id": 1
+  },
+  {
+    "title": "Poulet Basquaise",
+    "picture": "https://example.com/images/poulet_basquaise.jpg",
+    "ingredients": [
+      "poulet",
+      "poivrons",
+      "tomates",
+      "oignons",
+      "ail",
+      "huile d'olive",
+      "piment d'Espelette"
+    ],
+    "steps": [
+      "Faire revenir le poulet dans une cocotte.",
+      "Ajouter les poivrons, tomates, oignons et ail.",
+      "Saupoudrer de piment d'Espelette.",
+      "Laisser mijoter 45 minutes à feu doux."
+    ],
+    "description": "Un poulet mijoté avec des légumes du Sud-Ouest pour un plat parfumé.",
+    "user_id": 1
+  },
+  {
+    "title": "Mousse au Chocolat",
+    "picture": "https://example.com/images/mousse_chocolat.jpg",
+    "ingredients": ["chocolat noir", "œufs", "sucre"],
+    "steps": [
+      "Faire fondre le chocolat au bain-marie.",
+      "Séparer les jaunes d'œufs des blancs.",
+      "Mélanger le chocolat fondu aux jaunes.",
+      "Monter les blancs en neige et les incorporer délicatement.",
+      "Réfrigérer 3 heures avant de servir."
+    ],
+    "description": "Une mousse légère et onctueuse pour les amateurs de chocolat.",
+    "user_id": 1
+  },
+  {
+    "title": "Soupe à l'oignon",
+    "picture": "https://example.com/images/soupe_oignon.jpg",
+    "ingredients": [
+      "oignons",
+      "beurre",
+      "bouillon de bœuf",
+      "pain",
+      "fromage râpé"
+    ],
+    "steps": [
+      "Faire revenir les oignons dans le beurre jusqu'à ce qu'ils soient dorés.",
+      "Ajouter le bouillon et laisser mijoter 20 minutes.",
+      "Servir avec des tranches de pain et du fromage râpé gratiné."
+    ],
+    "description": "Une soupe réconfortante, parfaite pour les soirées d'hiver.",
+    "user_id": 1
+  },
+  {
+    "title": "Tarte Tatin",
+    "picture": "https://example.com/images/tarte_tatin.jpg",
+    "ingredients": ["pommes", "sucre", "beurre", "pâte feuilletée"],
+    "steps": [
+      "Faire caraméliser le sucre et le beurre dans une poêle.",
+      "Ajouter les pommes et les faire cuire.",
+      "Recouvrir de pâte feuilletée et enfourner 30 minutes à 180°C.",
+      "Retourner la tarte avant de servir."
+    ],
+    "description": "Une tarte aux pommes renversée, caramélisée et croustillante.",
+    "user_id": 1
+  },
+  {
+    "title": "Crêpes",
+    "picture": "https://example.com/images/crepes.jpg",
+    "ingredients": ["farine", "œufs", "lait", "sucre", "beurre"],
+    "steps": [
+      "Mélanger tous les ingrédients pour obtenir une pâte lisse.",
+      "Laisser reposer la pâte 30 minutes.",
+      "Faire cuire les crêpes dans une poêle chaude avec un peu de beurre."
+    ],
+    "description": "Des crêpes moelleuses, parfaites pour un dessert ou un goûter.",
+    "user_id": 1
+  },
+  {
+    "title": "Salade Niçoise",
+    "picture": "https://example.com/images/salade_nicoise.jpg",
+    "ingredients": [
+      "salade verte",
+      "tomates",
+      "œufs durs",
+      "thon",
+      "haricots verts",
+      "olives",
+      "anchois",
+      "vinaigrette"
+    ],
+    "steps": [
+      "Disposer la salade dans un plat.",
+      "Ajouter les légumes, le thon et les anchois.",
+      "Assaisonner avec la vinaigrette."
+    ],
+    "description": "Une salade complète, typique de la région niçoise.",
+    "user_id": 1
+  },
+  {
+    "title": "Gratin Dauphinois",
+    "picture": "https://example.com/images/gratin_dauphinois.jpg",
+    "ingredients": [
+      "pommes de terre",
+      "crème",
+      "ail",
+      "fromage râpé",
+      "poivre",
+      "sel"
+    ],
+    "steps": [
+      "Éplucher et couper les pommes de terre en tranches.",
+      "Les disposer dans un plat à gratin.",
+      "Ajouter la crème, l'ail et le fromage.",
+      "Enfourner à 180°C pendant 45 minutes."
+    ],
+    "description": "Un gratin fondant et crémeux, parfait pour accompagner les viandes.",
+    "user_id": 1
+  },
+  {
+    "title": "Croque-Monsieur",
+    "picture": "https://example.com/images/croque_monsieur.jpg",
+    "ingredients": ["pain de mie", "jambon", "fromage", "béchamel"],
+    "steps": [
+      "Étaler la béchamel sur les tranches de pain.",
+      "Ajouter une tranche de jambon et de fromage.",
+      "Refermer le croque-monsieur et le faire cuire."
+    ],
+    "description": "Un classique des snacks français, fondant et croustillant.",
+    "user_id": 1
+  },
+  {
+    "title": "Tartiflette",
+    "picture": "https://example.com/images/tartiflette.jpg",
+    "ingredients": [
+      "pommes de terre",
+      "oignons",
+      "lardons",
+      "reblochon",
+      "crème"
+    ],
+    "steps": [
+      "Faire cuire les pommes de terre en tranches.",
+      "Ajouter les oignons et les lardons.",
+      "Recouvrir de reblochon et enfourner."
+    ],
+    "description": "Un plat montagnard au fromage reblochon, idéal pour l'hiver.",
+    "user_id": 1
+  },
+  {
+    "title": "Bœuf Stroganoff",
+    "picture": "https://example.com/images/boeuf_stroganoff.jpg",
+    "ingredients": [
+      "bœuf",
+      "champignons",
+      "crème fraîche",
+      "moutarde",
+      "oignons"
+    ],
+    "steps": [
+      "Faire revenir le bœuf avec les oignons.",
+      "Ajouter les champignons, la crème et la moutarde.",
+      "Laisser mijoter quelques minutes."
+    ],
+    "description": "Une recette d'origine russe à base de viande et de crème.",
+    "user_id": 1
+  },
+  {
+    "title": "Poulet Rôti",
+    "picture": "https://example.com/images/poulet_roti.jpg",
+    "ingredients": [
+      "poulet",
+      "herbes de Provence",
+      "ail",
+      "beurre",
+      "sel",
+      "poivre"
+    ],
+    "steps": [
+      "Assaisonner le poulet avec les herbes, le sel et le poivre.",
+      "Insérer l'ail et le beurre sous la peau.",
+      "Rôtir au four pendant 1h30 à 200°C."
+    ],
+    "description": "Un poulet rôti classique, savoureux et juteux.",
+    "user_id": 1
+  },
+  {
+    "title": "Omelette",
+    "picture": "https://example.com/images/omelette.jpg",
+    "ingredients": ["œufs", "sel", "poivre", "fromage", "jambon"],
+    "steps": [
+      "Battre les œufs avec sel et poivre.",
+      "Verser dans une poêle chaude.",
+      "Ajouter le fromage et le jambon.",
+      "Plier l'omelette et servir."
+    ],
+    "description": "Simple et rapide, une omelette pour un repas léger."
+  },
+  {
+    "user_id": 1,
+    "title": "Ratatouille traditionnelle",
+    "picture": "https://example.com/images/ratatouille.jpg",
+    "ingredients": [
+      "aubergine",
+      "courgette",
+      "poivron",
+      "tomate",
+      "oignon",
+      "ail",
+      "herbes de Provence"
+    ],
+    "steps": [
+      "Couper les légumes en morceaux.",
+      "Faire revenir l'oignon et l'ail dans de l'huile d'olive.",
+      "Ajouter les légumes et cuire pendant 30 minutes.",
+      "Assaisonner avec sel, poivre et herbes de Provence."
+    ],
+    "description": "Un plat provençal coloré et savoureux."
+  },
+  {
+    "user_id": 1,
+    "title": "Quiche lorraine",
+    "picture": "https://example.com/images/quiche_lorraine.jpg",
+    "ingredients": [
+      "pâte brisée",
+      "crème fraîche",
+      "lardons",
+      "oeufs",
+      "fromage râpé",
+      "sel",
+      "poivre"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Étaler la pâte dans un moule.",
+      "Répartir les lardons sur la pâte.",
+      "Battre les oeufs avec la crème, le sel et le poivre, puis verser sur les lardons.",
+      "Parsemer de fromage râpé et cuire 30 minutes."
+    ],
+    "description": "Une tarte salée emblématique de la cuisine française."
+  },
+  {
+    "user_id": 1,
+    "title": "Poulet basquaise",
+    "picture": "https://example.com/images/poulet_basquaise.jpg",
+    "ingredients": [
+      "poulet",
+      "poivrons",
+      "tomates",
+      "oignons",
+      "ail",
+      "huile d'olive",
+      "piment d'Espelette"
+    ],
+    "steps": [
+      "Faire revenir le poulet dans de l'huile d'olive.",
+      "Ajouter les poivrons, tomates, oignons et l'ail.",
+      "Assaisonner avec le piment d'Espelette.",
+      "Laisser mijoter 40 minutes."
+    ],
+    "description": "Un plat du Sud-Ouest plein de saveurs."
+  },
+  {
+    "user_id": 1,
+    "title": "Gratin dauphinois",
+    "picture": "https://example.com/images/gratin_dauphinois.jpg",
+    "ingredients": [
+      "pommes de terre",
+      "crème fraîche",
+      "lait",
+      "ail",
+      "muscade",
+      "sel",
+      "poivre"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Éplucher et couper les pommes de terre en fines tranches.",
+      "Frotter un plat avec l'ail et disposer les pommes de terre.",
+      "Mélanger crème, lait, muscade, sel et poivre, et verser sur les pommes de terre.",
+      "Cuire 1 heure."
+    ],
+    "description": "Un accompagnement crémeux pour tous vos plats."
+  },
+  {
+    "user_id": 1,
+    "title": "Salade niçoise",
+    "picture": "https://example.com/images/salade_nicoise.jpg",
+    "ingredients": [
+      "tomates",
+      "oeufs",
+      "thon",
+      "haricots verts",
+      "olives noires",
+      "anchois",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Cuire les haricots verts et les oeufs.",
+      "Disposer les tomates, oeufs, thon, haricots, olives et anchois dans un saladier.",
+      "Assaisonner avec l'huile d'olive, sel et poivre."
+    ],
+    "description": "Une salade fraîche et typiquement provençale."
+  },
+  {
+    "user_id": 1,
+    "title": "Boeuf bourguignon",
+    "picture": "https://example.com/images/boeuf_bourguignon.jpg",
+    "ingredients": [
+      "boeuf",
+      "vin rouge",
+      "carottes",
+      "oignons",
+      "champignons",
+      "lardons",
+      "bouquet garni"
+    ],
+    "steps": [
+      "Faire mariner le boeuf avec le vin rouge et le bouquet garni.",
+      "Faire revenir les carottes, oignons, lardons et champignons.",
+      "Ajouter le boeuf et cuire à feu doux pendant 3 heures."
+    ],
+    "description": "Un classique de la cuisine française, riche et savoureux."
+  },
+  {
+    "user_id": 1,
+    "title": "Soupe à l'oignon",
+    "picture": "https://example.com/images/soupe_oignon.jpg",
+    "ingredients": [
+      "oignons",
+      "beurre",
+      "bouillon de boeuf",
+      "pain",
+      "fromage râpé"
+    ],
+    "steps": [
+      "Émincer les oignons et les faire fondre dans le beurre.",
+      "Ajouter le bouillon et laisser mijoter 20 minutes.",
+      "Verser dans des bols, ajouter le pain et le fromage, puis gratiner au four."
+    ],
+    "description": "Une soupe réconfortante idéale pour l'hiver."
+  },
+  {
+    "user_id": 1,
+    "title": "Coq au vin",
+    "picture": "https://example.com/images/coq_au_vin.jpg",
+    "ingredients": [
+      "coq",
+      "vin rouge",
+      "lardons",
+      "champignons",
+      "oignons",
+      "ail",
+      "bouquet garni"
+    ],
+    "steps": [
+      "Faire revenir le coq avec les lardons, champignons et oignons.",
+      "Ajouter le vin rouge, l'ail et le bouquet garni.",
+      "Cuire à feu doux pendant 2 heures."
+    ],
+    "description": "Un plat gourmand aux arômes puissants de vin rouge."
+  },
+  {
+    "user_id": 1,
+    "title": "Crêpes suzette",
+    "picture": "https://example.com/images/crepes_suzette.jpg",
+    "ingredients": [
+      "farine",
+      "oeufs",
+      "lait",
+      "beurre",
+      "sucre",
+      "oranges",
+      "Grand Marnier"
+    ],
+    "steps": [
+      "Préparer la pâte à crêpes et cuire les crêpes.",
+      "Préparer une sauce à l'orange avec beurre, sucre et jus d'orange.",
+      "Flamber les crêpes avec le Grand Marnier."
+    ],
+    "description": "Des crêpes flambées pour un dessert spectaculaire."
+  },
+  {
+    "user_id": 1,
+    "title": "Tarte Tatin",
+    "picture": "https://example.com/images/tarte_tatin.jpg",
+    "ingredients": ["pommes", "beurre", "sucre", "pâte brisée"],
+    "steps": [
+      "Faire fondre le beurre et le sucre dans un moule.",
+      "Ajouter les pommes et cuire 20 minutes.",
+      "Recouvrir avec la pâte et cuire au four 30 minutes."
+    ],
+    "description": "Une tarte renversée aux pommes caramélisées."
+  },
+  {
+    "user_id": 1,
+    "title": "Tajine de poulet aux abricots",
+    "picture": "https://example.com/images/tajine_poulet_abricots.jpg",
+    "ingredients": [
+      "poulet",
+      "abricots secs",
+      "oignons",
+      "amandes",
+      "miel",
+      "cannelle",
+      "épices à tajine"
+    ],
+    "steps": [
+      "Faire revenir le poulet avec les oignons et les épices.",
+      "Ajouter les abricots, le miel et un peu d'eau.",
+      "Laisser mijoter 1 heure et ajouter les amandes grillées avant de servir."
+    ],
+    "description": "Un plat sucré-salé parfumé et typique de la cuisine marocaine."
+  },
+  {
+    "user_id": 1,
+    "title": "Couscous royal",
+    "picture": "https://example.com/images/couscous_royal.jpg",
+    "ingredients": [
+      "semoule de couscous",
+      "agneau",
+      "poulet",
+      "merguez",
+      "pois chiches",
+      "légumes variés",
+      "épices"
+    ],
+    "steps": [
+      "Cuire la viande avec les épices dans une marmite.",
+      "Ajouter les légumes et laisser mijoter.",
+      "Préparer la semoule de couscous.",
+      "Servir avec les pois chiches et la viande."
+    ],
+    "description": "Un plat complet et convivial, idéal pour les grandes tablées."
+  },
+  {
+    "user_id": 1,
+    "title": "Clafoutis aux cerises",
+    "picture": "https://example.com/images/clafoutis_cerises.jpg",
+    "ingredients": ["cerises", "farine", "oeufs", "lait", "sucre", "beurre"],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Disposer les cerises dans un moule beurré.",
+      "Mélanger la farine, les oeufs, le lait et le sucre, puis verser sur les cerises.",
+      "Cuire 40 minutes."
+    ],
+    "description": "Un dessert fondant aux saveurs de fruits d'été."
+  },
+  {
+    "user_id": 1,
+    "title": "Fondant au chocolat",
+    "picture": "https://example.com/images/fondant_chocolat.jpg",
+    "ingredients": ["chocolat", "beurre", "sucre", "farine", "oeufs"],
+    "steps": [
+      "Faire fondre le chocolat et le beurre.",
+      "Ajouter le sucre, la farine et les oeufs.",
+      "Verser dans un moule et cuire 10-12 minutes à 180°C."
+    ],
+    "description": "Un dessert gourmand, parfait pour les amateurs de chocolat."
+  },
+  {
+    "user_id": 1,
+    "title": "Sole meunière",
+    "picture": "https://example.com/images/sole_meuniere.jpg",
+    "ingredients": [
+      "sole",
+      "beurre",
+      "citron",
+      "persil",
+      "farine",
+      "sel",
+      "poivre"
+    ],
+    "steps": [
+      "Fariner les filets de sole.",
+      "Les cuire dans du beurre jusqu'à ce qu'ils soient dorés.",
+      "Ajouter du jus de citron et du persil avant de servir."
+    ],
+    "description": "Un plat de poisson simple et délicat."
+  },
+  {
+    "user_id": 1,
+    "title": "Salade de lentilles au chèvre",
+    "picture": "https://example.com/images/salade_lentilles_chevre.jpg",
+    "ingredients": [
+      "lentilles",
+      "chèvre frais",
+      "échalote",
+      "tomates cerises",
+      "vinaigre balsamique",
+      "huile d'olive"
+    ],
+    "steps": [
+      "Cuire les lentilles.",
+      "Ajouter les échalotes et les tomates cerises coupées en deux.",
+      "Mélanger avec le chèvre et assaisonner avec vinaigre et huile."
+    ],
+    "description": "Une salade nourrissante et pleine de saveurs."
+  },
+  {
+    "user_id": 1,
+    "title": "Riz au lait à la vanille",
+    "picture": "https://example.com/images/riz_lait_vanille.jpg",
+    "ingredients": ["riz", "lait", "sucre", "vanille", "beurre"],
+    "steps": [
+      "Faire chauffer le lait avec la gousse de vanille.",
+      "Ajouter le riz et cuire doucement en remuant.",
+      "Sucrer et laisser épaissir avant de servir."
+    ],
+    "description": "Un dessert réconfortant et onctueux, parfait pour les amateurs de vanille."
+  },
+  {
+    "user_id": 1,
+    "title": "Croque-monsieur",
+    "picture": "https://example.com/images/croque_monsieur.jpg",
+    "ingredients": ["pain de mie", "jambon", "fromage râpé", "béchamel"],
+    "steps": [
+      "Étaler la béchamel sur une tranche de pain.",
+      "Ajouter le jambon et le fromage.",
+      "Recouvrir d'une autre tranche de pain et passer au four."
+    ],
+    "description": "Un sandwich grillé irrésistible avec son coeur fondant au fromage."
+  },
+  {
+    "user_id": 1,
+    "title": "Tarte aux poireaux",
+    "picture": "https://example.com/images/tarte_poireaux.jpg",
+    "ingredients": [
+      "pâte brisée",
+      "poireaux",
+      "crème fraîche",
+      "oeufs",
+      "fromage râpé",
+      "sel",
+      "poivre"
+    ],
+    "steps": [
+      "Préchauffer le four à 180°C.",
+      "Faire revenir les poireaux à la poêle.",
+      "Battre les oeufs avec la crème, le sel et le poivre.",
+      "Étaler la pâte, ajouter les poireaux et verser la préparation aux oeufs.",
+      "Cuire 35 minutes."
+    ],
+    "description": "Une tarte salée légère et savoureuse."
+  },
+  {
+    "user_id": 1,
+    "title": "Brioche perdue",
+    "picture": "https://example.com/images/brioche_perdue.jpg",
+    "ingredients": ["brioche", "oeufs", "lait", "sucre", "beurre"],
+    "steps": [
+      "Battre les oeufs avec le lait et le sucre.",
+      "Tremper les tranches de brioche dans le mélange.",
+      "Faire dorer dans une poêle avec du beurre."
+    ],
+    "description": "Un dessert simple et économique pour ne pas gaspiller la brioche."
+  },
+  {
+    "user_id": 1,
+    "title": "Pavlova aux fruits rouges",
+    "picture": "https://example.com/images/pavlova.jpg",
+    "ingredients": [
+      "blancs d'oeufs",
+      "sucre",
+      "crème fouettée",
+      "fruits rouges"
+    ],
+    "steps": [
+      "Monter les blancs en neige avec le sucre.",
+      "Former une meringue et cuire à 120°C pendant 1 heure.",
+      "Garnir de crème fouettée et de fruits rouges."
+    ],
+    "description": "Un dessert élégant et léger, parfait pour l'été."
+  },
+  {
+    "user_id": 1,
+    "title": "Soupe de potimarron",
+    "picture": "https://example.com/images/soupe_potimarron.jpg",
+    "ingredients": [
+      "potimarron",
+      "pommes de terre",
+      "carottes",
+      "crème",
+      "sel",
+      "poivre"
+    ],
+    "steps": [
+      "Éplucher et couper les légumes.",
+      "Les cuire dans de l'eau salée jusqu'à ce qu'ils soient tendres.",
+      "Mixer avec de la crème et assaisonner."
+    ],
+    "description": "Une soupe onctueuse et douce pour l'automne."
+  },
+  {
+    "user_id": 1,
+    "title": "Gaufres maison",
+    "picture": "https://example.com/images/gaufres.jpg",
+    "ingredients": ["farine", "sucre", "beurre", "oeufs", "lait", "levure"],
+    "steps": [
+      "Mélanger tous les ingrédients pour obtenir une pâte lisse.",
+      "Cuire dans un gaufrier jusqu'à ce qu'elles soient dorées.",
+      "Servir avec sucre ou chocolat fondu."
+    ],
+    "description": "Des gaufres croustillantes et moelleuses à la fois."
+  },
+  {
+    "user_id": 1,
+    "title": "Tian de légumes",
+    "picture": "https://example.com/images/tian_legumes.jpg",
+    "ingredients": [
+      "courgettes",
+      "aubergines",
+      "tomates",
+      "huile d'olive",
+      "ail",
+      "herbes de Provence"
+    ],
+    "steps": [
+      "Couper les légumes en rondelles.",
+      "Les disposer en couches dans un plat et arroser d'huile d'olive.",
+      "Assaisonner avec l'ail et les herbes, puis cuire au four 45 minutes."
+    ],
+    "description": "Un plat léger et coloré, parfait pour accompagner les viandes grillées."
+  },
+  {
+    "user_id": 1,
+    "title": "Roulé à la confiture",
+    "picture": "https://example.com/images/roule_confiture.jpg",
+    "ingredients": ["oeufs", "farine", "sucre", "confiture"],
+    "steps": [
+      "Préparer une génoise et la cuire en fine épaisseur.",
+      "Étaler la confiture et rouler délicatement.",
+      "Saupoudrer de sucre glace avant de servir."
+    ],
+    "description": "Un dessert rapide et idéal pour le goûter."
+  }
+]
