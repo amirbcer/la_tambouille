@@ -7,10 +7,10 @@ class Api::V1::UsersController < ApplicationController
       return render json: { error: "Email has already been taken" }, status: :unprocessable_entity
     end
 
-    user = User.new(user_params)
+    @user = User.new(user_params)
 
-    if user.save
-      render json: user, status: :created
+    if @user.save
+      render "api/v1/users/create", status: :created
     else
       render json: user.errors, status: :unprocessable_entity
     end
