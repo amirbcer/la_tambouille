@@ -1,11 +1,9 @@
-import axios from 'axios';
 import { Recipe } from '../models/Recipe';
+import apiService from './ApiService';
 
-const API_URL = 'http://localhost:3000/api/v1/recipes';
-
-export const RecipeService = {
+export const recipeService = {
   async getAll(page: number): Promise<Recipe[]> {
-    const response = await axios.get(`${API_URL}.json`, {
+    const response = await apiService.get(`recipes.json`, {
       params: {
         page,
       },
@@ -15,7 +13,7 @@ export const RecipeService = {
   },
 
   async getById(id: number): Promise<Recipe> {
-    const response = await axios.get(`${API_URL}/${id}.json`);
+    const response = await apiService.get(`recipes/${id}.json`);
 
     return response.data;
   },
