@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Recipe } from '../models/Recipe';
-import { RecipeService } from '../services/RecipeService';
+import { recipeService } from '../services/RecipeService';
 
 function useRecipes(page: number) {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
@@ -12,7 +12,7 @@ function useRecipes(page: number) {
       try {
         setLoading(true);
 
-        const currentRecipes = await RecipeService.getAll(page);
+        const currentRecipes = await recipeService.getAll(page);
 
         setFullyLoaded(currentRecipes.length < 15);
         setRecipes((previousRecipes) => [...previousRecipes, ...currentRecipes]);

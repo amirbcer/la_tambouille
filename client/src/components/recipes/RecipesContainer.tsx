@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
-import { Recipe } from '../models/Recipe';
-import RecipeCard from './RecipeCard';
 import { Loading } from 'react-daisyui';
 import { TbMoodEmpty } from 'react-icons/tb';
+import { Link } from 'react-router-dom';
+import { Recipe } from '../../models/Recipe';
+import RecipeCard from './RecipeCard';
 
 interface RecipesContainerProps {
   recipes: Recipe[];
@@ -11,15 +11,14 @@ interface RecipesContainerProps {
 
 function RecipesContainer({ recipes, loading }: RecipesContainerProps) {
   return (
-    <div className="mx-auto my-12 px-8 lg:mx-12 lg:px-12">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
+    <div className="mx-8 my-12 lg:mx-16 xl:mx-32">
+      <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
         {recipes.map((recipe: Recipe, index) => (
           <Link to={`/recipes/${recipe.id}`} key={index}>
             <RecipeCard recipe={recipe} />
           </Link>
         ))}
       </div>
-
       <div className="flex justify-center mt-7">
         {loading && <Loading size="lg" className="text-2xl text-blue-500" />}
         {!loading && recipes.length === 0 && (

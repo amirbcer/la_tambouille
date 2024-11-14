@@ -1,4 +1,4 @@
-import { Recipe } from '../models/Recipe';
+import { Recipe } from '../../models/Recipe';
 
 interface RecipeDetailsProps {
   recipe: Recipe;
@@ -13,7 +13,8 @@ function RecipeDetails({ recipe }: RecipeDetailsProps) {
         className="w-full max-w-xs lg:max-w-sm rounded-lg object-cover"
       />
       <div className="flex flex-col items-center space-y-4">
-        <span className="text-lg font-semibold">Proposée par : {recipe.author}</span>
+        <span className="text-2xl font-semibold">{recipe.title}</span>
+        <span className="text-md font-semibold">Recette proposée par {recipe.author}</span>
 
         <div className="w-full max-w-md">
           <h2 className="text-2xl font-bold mb-3">Ingrédients</h2>

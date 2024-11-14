@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import RecipesContainer from '../components/RecipesContainer';
-import useRecipes from '../hooks/useRecipes';
+import RecipesContainer from '../components/recipes/RecipesContainer';
 import useInfiniteScroll from '../hooks/useInfiniteScroll';
+import useRecipes from '../hooks/useRecipes';
 
 function RecipesList() {
   const { page, nextPage } = useInfiniteScroll();
@@ -19,10 +19,7 @@ function RecipesList() {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-96 justify-center items-center flex flex-col  space-y-2">
-        <p className="text-lg sm:text-xl md:text-3xl text-white font-bold">Bienvenue sur La Tambouille 🍽️</p>
-        <p className="text-lg sm:text-xl text-white font-bold">Trouve ta recette favorite !</p>
-      </div>
+      <h2 className="text-xl font-semibold m-12">Découvre les recettes de la communauté !</h2>
       <RecipesContainer recipes={recipes} loading={loading} />
     </div>
   );
