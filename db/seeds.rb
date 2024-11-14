@@ -13,7 +13,7 @@ puts "Seeding database '#{ActiveRecord::Base.connection.current_database}'"
 # Create a user
 User.create(
   email_address: "test@latambouille.com",
-  password_digest: "latambouille69",
+  password: "latambouille69",
   name: "Johnny Love"
 )
 
