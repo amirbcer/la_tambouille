@@ -12,9 +12,9 @@ function useRecipes(page: number) {
       try {
         setLoading(true);
 
-        const currentRecipes = await recipeService.getAll(page);
+        const currentRecipes = await recipeService.getPublicRecipes(page);
 
-        setFullyLoaded(currentRecipes.length < 15);
+        setFullyLoaded(currentRecipes.length < 12);
         setRecipes((previousRecipes) => [...previousRecipes, ...currentRecipes]);
       } catch (err) {
         console.error(err);

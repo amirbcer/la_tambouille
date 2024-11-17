@@ -1,8 +1,13 @@
 export interface Recipe {
   id: number;
   title: string;
-  picture: string;
-  ingredients?: string[];
-  steps?: string[];
-  author: string;
+  content: string;
+  author?: string;
+  picture?: string;
+}
+
+export interface RecipeParams {
+  title: string;
+  content: string;
+  picture?: File;
 }

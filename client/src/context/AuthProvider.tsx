@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
+import { createContext, ReactNode, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LoginParams } from '../models/Auth';
 import { User } from '../models/User';
@@ -20,21 +20,14 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 const AuthProvider = ({ children }: AuthProviderProps) => {
-  const [token, setToken] = useState<string>('');
-  const [user, setUser] = useState<User | null>(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const navigate = useNavigate();
+  const storedToken = localStorage.getItem('token');
+  const storedUser = localStorage.getItem('user');
+  const getIsLoggedIn = storedToken !== null && storedUser !== null;
 
-  useEffect(() => {
-    const storedToken = localStorage.getItem('token');
-    const storedUser = localStorage.getItem('user');
-
-    if (storedToken && storedUser) {
-      setToken(storedToken);
-      setUser(JSON.parse(storedUser));
-      setIsLoggedIn(true);
-    }
-  }, []);
+  const [token, setToken] = useState<string>(storedToken || '');
+  const [user, setUser] = useState<User | null>(storedUser ? JSON.parse(storedUser) : null);
+  const [isLoggedIn, setIsLoggedIn] = useState(getIsLoggedIn);
 
   const login = async (user: LoginParams) => {
     try {
@@ -62,13 +55,13 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
       const { data, status } = await apiService.delete('session.json');
 
       if (status === 200) {
-        setIsLoggedIn(false);
-        setToken('');
         setUser(null);
+        setToken('');
+        setIsLoggedIn(false);
         localStorage.removeItem('token');
         localStorage.removeItem('user');
-        navigate('/login');
 
+        navigate('/login');
         return;
       }
 

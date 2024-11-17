@@ -2,9 +2,9 @@ import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthProvider';
 
 const AuthGuard = () => {
-  const user = useAuth();
+  const auth = useAuth();
 
-  if (!user?.token) return <Navigate to="/login" />;
+  if (!auth?.isLoggedIn) return <Navigate to="/login" />;
   return <Outlet />;
 };
 
