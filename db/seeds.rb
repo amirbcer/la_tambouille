@@ -24,10 +24,7 @@ recipes = JSON.parse(file, symbolize_names: true)
 recipes.each do |recipe|
   Recipe.create(
     title: recipe[:title],
-    picture: recipe[:picture],
-    ingredients: recipe[:ingredients],
-    steps: recipe[:steps],
-    description: recipe[:description],
+    content: recipe[:content],
     user_id: recipe[:user_id]
   )
 end
