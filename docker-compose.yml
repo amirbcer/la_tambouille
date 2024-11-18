@@ -12,6 +12,7 @@ services:
   api:
     build:
       context: .
+      dockerfile: rails.dockerfile
     volumes:
       - .:/rails
     ports:

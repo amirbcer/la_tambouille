@@ -47,3 +47,9 @@ group :development, :test do
 end
 
 gem "kaminari", "~> 1.2"
+
+gem "dockerfile-rails", ">= 1.6", group: :development
+
+gem "redis", "~> 5.3"
+
+gem "aws-sdk-s3", "~> 1.171", require: false

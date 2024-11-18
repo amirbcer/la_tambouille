@@ -16,7 +16,8 @@ function RecipeChat() {
   const scrollToBottom = () => scrollToEndRef.current?.scrollIntoView({ behavior: 'smooth' });
 
   const initWebSocket = useCallback(() => {
-    const ws = new WebSocket(`ws://localhost:3000/cable`);
+    const wsUrl = import.meta.env.DEV ? 'ws://localhost:3000/cable' : 'wss://la-tambouille.fly.dev/cable';
+    const ws = new WebSocket(wsUrl);
     console.log('Connected to WebSocket for recipe', recipeId);
 
     ws.onopen = () => {
