@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import MyRecipesEdit from './pages/MyRecipesEdit';
 import { default as MyRecipesList } from './pages/MyRecipesList';
 import MyRecipesNew from './pages/MyRecipesNew';
+import RecipeChat from './pages/RecipeChat';
 import RecipeShow from './pages/RecipeShow';
 import RecipesList from './pages/RecipesList';
 import Register from './pages/Register';
@@ -22,7 +23,9 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/recipes" element={<RecipesList />} />
               <Route path="/recipes/:id" element={<RecipeShow />} />
+              {/* PRIVATE ROUTES */}
               <Route element={<AuthGuard />}>
+                <Route path="/recipes/:id/chat" element={<RecipeChat />} />
                 <Route path="/my-recipes" element={<MyRecipesList />} />
                 <Route path="/my-recipes/:id/edit" element={<MyRecipesEdit />} />
                 <Route path="/my-recipes/new" element={<MyRecipesNew />} />

@@ -30,23 +30,17 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
   const [isLoggedIn, setIsLoggedIn] = useState(getIsLoggedIn);
 
   const login = async (user: LoginParams) => {
-    try {
-      const { data, status } = await apiService.post('session.json', { user });
+    const { data, status } = await apiService.post('session.json', { user });
 
-      if (status === 200) {
-        setUser(data.user);
-        setToken(data.token);
-        setIsLoggedIn(true);
-        localStorage.setItem('token', data.token);
-        localStorage.setItem('user', JSON.stringify(data.user));
+    if (status === 200) {
+      setUser(data.user);
+      setToken(data.token);
+      setIsLoggedIn(true);
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('user', JSON.stringify(data.user));
 
-        navigate('/recipes');
-        return;
-      }
-
-      throw new Error(data.message);
-    } catch (err) {
-      console.error(err);
+      navigate('/recipes');
+      return;
     }
   };
 

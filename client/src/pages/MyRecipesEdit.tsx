@@ -15,22 +15,23 @@ function MyRecipesEdit() {
     const fetchRecipe = async () => {
       try {
         if (!id || isNaN(Number(id))) {
-          throw new Error('Invalid ID provided : must be a valid number.');
+          throw new Error('Invalid ID provided');
         }
 
         const recipe = await recipeService.getById(+id);
         setRecipe(recipe);
       } catch (err) {
         console.error(err);
+        navigate('/my-recipes');
       }
     };
 
     fetchRecipe();
-  }, [id]);
+  }, [id, navigate]);
 
   const handleSubmit = async (params: RecipeParams) => {
     if (!auth?.user) throw new Error('Invalid user provided.');
-    await recipeService.upsertMyRecipe(auth?.user?.id, params, 'edit', recipe.id);
+    await recipeService.upsertMyRecipe(auth.user.id, params, 'edit', recipe.id);
     navigate('/my-recipes');
   };
 
