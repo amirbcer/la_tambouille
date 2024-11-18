@@ -3,13 +3,18 @@ Rails.application.routes.draw do
     namespace :v1 do
       resource :session
       resources :passwords, param: :token
-      resources :recipes, only: %i[index show]
+      resources :recipes, only: %i[index show] do
+        resource :chat, only: %i[show] do
+          resources :messages, only: %i[create]
+        end
+      end
       resources :users, only: %i[create] do
         resources :recipes, controller: "user_recipes"
       end
     end
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  mount ActionCable.server => "/cable"
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.
