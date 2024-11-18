@@ -1,7 +1,7 @@
 class Api::V1::UserRecipesController < ApplicationController
   before_action :set_user
   before_action :set_recipe, only: %i[show update destroy]
-  before_action :authorize_user
+  before_action :request_authentication
 
   # GET /api/v1/users/:user_id/recipes
   def index

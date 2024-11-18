@@ -28,7 +28,7 @@ function Register() {
   };
 
   useEffect(() => {
-    if (auth?.isLoggedIn) navigate('/recipes');
+    if (auth?.currentUser) navigate('/recipes');
   });
 
   return (

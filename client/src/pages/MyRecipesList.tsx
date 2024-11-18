@@ -21,11 +21,11 @@ function MyRecipesList() {
     try {
       setLoading(true);
 
-      if (!auth?.user) {
+      if (!auth?.currentUser) {
         throw new Error('Invalid user provided.');
       }
 
-      const { recipes, total } = await recipeService.getMyRecipes(auth.user.id, page);
+      const { recipes, total } = await recipeService.getMyRecipes(auth.currentUser.id, page);
 
       setRecipeList(recipes);
       setTotal(total);
@@ -34,13 +34,13 @@ function MyRecipesList() {
     } finally {
       setLoading(false);
     }
-  }, [auth?.user, page]);
+  }, [auth?.currentUser, page]);
 
   const deleteRecipe = async (recipeId: number) => {
-    if (!auth?.user) return;
+    if (!auth?.currentUser) return;
 
     try {
-      await recipeService.deleteMyRecipe(auth.user.id, recipeId);
+      await recipeService.deleteMyRecipe(auth.currentUser.id, recipeId);
 
       const updatedList = recipeList.filter((recipe) => recipe.id !== recipeId);
       setRecipeList(updatedList);
@@ -59,7 +59,7 @@ function MyRecipesList() {
   return (
     <div className="my-20 px-12">
       <div className="text-lg font-semibold mb-6 text-start">
-        <span>Ravi de te revoir, {auth?.user?.name} 😀👋</span>
+        <span>Ravi de te revoir, {auth?.currentUser?.name} 😀👋</span>
       </div>
       <div className="flex flex-row justify-between items-center bg-gray-100 p-5 rounded-md border border-b-0 space-x-5">
         <span className="text-xl font-semibold">Liste de mes recettes</span>

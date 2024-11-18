@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resource :session
-      resources :passwords, param: :token
+      resource :session, only: %i[show create destroy]
       resources :recipes, only: %i[index show] do
         resource :chat, only: %i[show] do
           resources :messages, only: %i[create]

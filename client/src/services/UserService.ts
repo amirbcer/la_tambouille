@@ -8,4 +8,10 @@ export const userService = {
 
     return response.data;
   },
+
+  async getCurrentUser(): Promise<User> {
+    const response = await apiService.get(`session.json`);
+
+    return response.data;
+  },
 };

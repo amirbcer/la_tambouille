@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthProvider';
 const AuthGuard = () => {
   const auth = useAuth();
 
-  if (!auth?.isLoggedIn) return <Navigate to="/login" />;
+  if (!auth?.currentUser) return <Navigate to="/login" />;
   return <Outlet />;
 };
 

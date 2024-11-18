@@ -10,11 +10,10 @@ interface RecipeDetailsProps {
 }
 
 function RecipeDetails({ recipe, openChat }: RecipeDetailsProps) {
-  const authContext = useAuth();
-  const isLoggedIn = authContext ? authContext.isLoggedIn : false;
+  const auth = useAuth();
 
   const chatButton = (
-    <Button onClick={() => openChat()} disabled={!isLoggedIn} color="info" className="text-white">
+    <Button onClick={() => openChat()} disabled={!auth?.currentUser} color="info" className="text-white">
       <MdMessage className="text-lg" />
       Chat Live
     </Button>
@@ -33,7 +32,7 @@ function RecipeDetails({ recipe, openChat }: RecipeDetailsProps) {
             <span className="text-md font-semibold">Recette postée par {recipe.author}</span>
           </div>
 
-          {!isLoggedIn ? (
+          {!auth?.currentUser ? (
             <Tooltip message="Connecte toi pour échanger sur cette recette">{chatButton}</Tooltip>
           ) : (
             chatButton

@@ -22,7 +22,7 @@ function Login() {
   };
 
   useEffect(() => {
-    if (auth?.isLoggedIn) navigate('/recipes');
+    if (auth?.currentUser) navigate('/recipes');
   });
 
   useEffect(() => {

@@ -30,8 +30,8 @@ function MyRecipesEdit() {
   }, [id, navigate]);
 
   const handleSubmit = async (params: RecipeParams) => {
-    if (!auth?.user) throw new Error('Invalid user provided.');
-    await recipeService.upsertMyRecipe(auth.user.id, params, 'edit', recipe.id);
+    if (!auth?.currentUser) throw new Error('Invalid user provided.');
+    await recipeService.upsertMyRecipe(auth.currentUser.id, params, 'edit', recipe.id);
     navigate('/my-recipes');
   };
 
