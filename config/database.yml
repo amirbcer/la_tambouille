@@ -19,8 +19,7 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-
-development:
+development: &development
   <<: *default
   database: la_tambouille_development
 
@@ -28,19 +27,19 @@ development:
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: la_tambouille
+  username: <%= ENV["POSTGRES_USER"] %>
 
   # The password associated with the PostgreSQL role (username).
-  #password:
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  #host: localhost
+  host: <%= ENV["POSTGRES_HOST"] %>
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  #port: 5432
+  port: <%= ENV["POSTGRES_PORT"] %>
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -56,6 +55,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+  <<: *development
   database: la_tambouille_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -84,15 +84,19 @@ production:
     database: la_tambouille_production
     username: la_tambouille
     password: <%= ENV["LA_TAMBOUILLE_DATABASE_PASSWORD"] %>
+    url: <%= ENV["DATABASE_URL"] %>
   cache:
     <<: *primary_production
     database: la_tambouille_production_cache
     migrations_paths: db/cache_migrate
+    url: <%= URI.parse(ENV["DATABASE_URL"]).tap { |url| url.path += "_cache" } if ENV["DATABASE_URL"] %>
   queue:
     <<: *primary_production
     database: la_tambouille_production_queue
     migrations_paths: db/queue_migrate
+    url: <%= URI.parse(ENV["DATABASE_URL"]).tap { |url| url.path += "_queue" } if ENV["DATABASE_URL"] %>
   cable:
     <<: *primary_production
     database: la_tambouille_production_cable
     migrations_paths: db/cable_migrate
+    url: <%= URI.parse(ENV["DATABASE_URL"]).tap { |url| url.path += "_cable" } if ENV["DATABASE_URL"] %>

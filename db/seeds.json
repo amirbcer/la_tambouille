@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Ratatouille Provençale",
+    "content": "<h3>Description</h3><p>La ratatouille est un plat typique du sud de la France, riche en légumes méditerranéens.</p><h3>Ingrédients</h3><ul><li>1 aubergine</li><li>2 courgettes</li><li>2 poivrons (rouge et vert)</li><li>4 tomates</li><li>1 oignon</li><li>2 gousses d'ail</li><li>Herbes de Provence</li><li>Huile d'olive</li></ul><h3>Étapes</h3><ol><li>Couper les légumes en morceaux.</li><li>Faire revenir l'oignon et l'ail dans l'huile d'olive.</li><li>Ajouter les légumes et cuire à feu moyen pendant 30 minutes.</li><li>Saisonner avec les herbes de Provence et servir chaud.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Quiche Lorraine",
+    "content": "<h3>Description</h3><p>La quiche Lorraine est une tarte salée traditionnelle de la région de Lorraine, composée de lardons et d'œufs.</p><h3>Ingrédients</h3><ul><li>1 pâte brisée</li><li>200 g de lardons</li><li>3 œufs</li><li>200 ml de crème fraîche</li><li>100 g de fromage râpé</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Faire revenir les lardons dans une poêle.</li><li>Battre les œufs avec la crème, ajouter le fromage râpé, le sel et le poivre.</li><li>Étaler la pâte dans un moule, ajouter les lardons et verser le mélange d'œufs par-dessus.</li><li>Cuire au four pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Tarte Tatin",
+    "content": "<h3>Description</h3><p>La tarte Tatin est un dessert renversé à base de pommes caramélisées et de pâte feuilletée.</p><h3>Ingrédients</h3><ul><li>6 pommes</li><li>150 g de sucre</li><li>50 g de beurre</li><li>1 pâte feuilletée</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Faire fondre le sucre et le beurre dans une poêle jusqu'à obtenir un caramel.</li><li>Ajouter les pommes pelées et coupées en quartiers dans le caramel.</li><li>Recouvrir avec la pâte feuilletée et cuire au four pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Coq au Vin",
+    "content": "<h3>Description</h3><p>Le coq au vin est un plat traditionnel français où le poulet est mijoté dans un vin rouge avec des légumes et des épices.</p><h3>Ingrédients</h3><ul><li>1 poulet découpé</li><li>1 bouteille de vin rouge</li><li>2 carottes</li><li>1 oignon</li><li>200 g de champignons de Paris</li><li>3 gousses d'ail</li><li>1 bouquet garni</li><li>Huile d'olive</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Faire revenir les morceaux de poulet dans une grande cocotte.</li><li>Ajouter l'oignon, les carottes et l'ail émincés.</li><li>Verser le vin rouge et ajouter le bouquet garni.</li><li>Laisser mijoter pendant 1h30 à feu doux.</li><li>Ajouter les champignons et continuer la cuisson pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Soupe à l'oignon",
+    "content": "<h3>Description</h3><p>La soupe à l'oignon est un classique de la cuisine française, parfaite pour les soirées d'hiver.</p><h3>Ingrédients</h3><ul><li>4 oignons</li><li>1 litre de bouillon de volaille</li><li>1 baguette</li><li>200 g de fromage râpé</li><li>Beurre</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Faire revenir les oignons émincés dans le beurre jusqu'à ce qu'ils soient dorés.</li><li>Ajouter le bouillon de volaille et laisser mijoter pendant 30 minutes.</li><li>Couper la baguette en tranches, les faire griller et les poser sur la soupe.</li><li>Ajouter le fromage râpé et gratiner sous le grill du four.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Boeuf Bourguignon",
+    "content": "<h3>Description</h3><p>Le bœuf bourguignon est un plat mijoté à base de viande de bœuf et de vin rouge, très parfumé.</p><h3>Ingrédients</h3><ul><li>1 kg de viande de bœuf (type bourguignon)</li><li>1 bouteille de vin rouge</li><li>2 carottes</li><li>1 oignon</li><li>200 g de champignons de Paris</li><li>100 g de lardons</li><li>2 gousses d'ail</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Faire revenir la viande et les lardons dans une cocotte.</li><li>Ajouter l'oignon, les carottes et l'ail hachés.</li><li>Verser le vin rouge et laisser mijoter à feu doux pendant 2 heures.</li><li>Ajouter les champignons et poursuivre la cuisson pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Croissants",
+    "content": "<h3>Description</h3><p>Les croissants sont des viennoiseries légères et feuilletées, parfaites pour un petit déjeuner.</p><h3>Ingrédients</h3><ul><li>250 g de farine</li><li>150 g de beurre</li><li>10 g de levure de boulanger</li><li>100 ml de lait</li><li>50 g de sucre</li><li>1 œuf</li><li>1 pincée de sel</li></ul><h3>Étapes</h3><ol><li>Mélanger la farine, la levure, le sucre et le sel dans un saladier.</li><li>Ajouter le lait et l'œuf, puis pétrir la pâte.</li><li>Incorporer le beurre, laisser lever la pâte pendant 1 heure.</li><li>Façonner les croissants et les faire cuire à 200°C pendant 15 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Salade Niçoise",
+    "content": "<h3>Description</h3><p>La salade Niçoise est une salade composée typique de la région de Nice, avec du thon, des œufs durs et des légumes frais.</p><h3>Ingrédients</h3><ul><li>200 g de thon en conserve</li><li>2 œufs durs</li><li>4 tomates</li><li>1 poivron</li><li>100 g d'olives noires</li><li>1 oignon rouge</li><li>Quelques feuilles de basilic</li><li>Vinaigrette</li></ul><h3>Étapes</h3><ol><li>Couper les légumes en morceaux et les disposer dans un grand plat.</li><li>Ajouter les œufs durs coupés en quartiers et le thon émietté.</li><li>Arroser de vinaigrette et décorer avec des feuilles de basilic.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Madeleines",
+    "content": "<h3>Description</h3><p>Les madeleines sont de petites douceurs en forme de coquillage, idéales pour le goûter.</p><h3>Ingrédients</h3><ul><li>250 g de farine</li><li>150 g de beurre</li><li>150 g de sucre</li><li>3 œufs</li><li>1 cuillère à soupe de miel</li><li>1 sachet de levure chimique</li></ul><h3>Étapes</h3><ol><li>Faire fondre le beurre et le mélanger avec le sucre et les œufs.</li><li>Ajouter la farine, la levure et le miel, puis mélanger.</li><li>Verser dans des moules à madeleines et cuire à 180°C pendant 12 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Poulet rôti",
+    "content": "<h3>Description</h3><p>Le poulet rôti est un plat simple et délicieux, parfait pour un repas familial.</p><h3>Ingrédients</h3><ul><li>1 poulet entier</li><li>2 gousses d'ail</li><li>Herbes de Provence</li><li>Huile d'olive</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 200°C.</li><li>Badigeonner le poulet d'huile d'olive et le frotter avec l'ail et les herbes de Provence.</li><li>Rôtir le poulet pendant 1h30 en l'arrosant régulièrement.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Moussaka",
+    "content": "<h3>Description</h3><p>La moussaka est un plat traditionnel grec, à base d'aubergines, de viande hachée et de béchamel.</p><h3>Ingrédients</h3><ul><li>3 aubergines</li><li>500 g de viande hachée d'agneau</li><li>2 tomates</li><li>1 oignon</li><li>2 gousses d'ail</li><li>Bechamel (500 ml)</li><li>Fromage râpé</li><li>Sel, poivre, huile d'olive</li></ul><h3>Étapes</h3><ol><li>Couper les aubergines en tranches et les faire frire légèrement.</li><li>Faire revenir la viande hachée avec l'oignon et l'ail émincés, ajouter les tomates coupées.</li><li>Monter les couches avec les aubergines, la viande et la béchamel.</li><li>Gratiner avec le fromage râpé et cuire au four à 180°C pendant 45 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Choucroute Garnie",
+    "content": "<h3>Description</h3><p>La choucroute garnie est un plat alsacien consistant en de la choucroute cuite avec des viandes salées.</p><h3>Ingrédients</h3><ul><li>1 kg de choucroute</li><li>600 g de saucisses de Strasbourg</li><li>4 côtes de porc</li><li>1 jarret de porc</li><li>1 oignon</li><li>3 gousses d'ail</li><li>Vins blanc, sel, poivre</li></ul><h3>Étapes</h3><ol><li>Faire revenir l'oignon et l'ail dans une cocotte avec un peu d'huile.</li><li>Ajouter la choucroute, le vin blanc et les viandes.</li><li>Laisser mijoter 2 heures à feu doux.</li><li>Servir chaud avec des pommes de terre vapeur.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Poulet au Citron et Olive",
+    "content": "<h3>Description</h3><p>Le poulet au citron et aux olives est un plat méditerranéen, parfumé et légèrement acidulé.</p><h3>Ingrédients</h3><ul><li>1 poulet entier</li><li>2 citrons</li><li>100 g d'olives vertes</li><li>1 oignon</li><li>2 gousses d'ail</li><li>Herbes de Provence, huile d'olive</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 200°C.</li><li>Badigeonner le poulet avec de l'huile d'olive, ajouter les herbes, le sel et le poivre.</li><li>Couper les citrons en quartiers et les insérer dans le poulet.</li><li>Rôtir au four pendant 1h30, en ajoutant les olives 30 minutes avant la fin de la cuisson.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Tartiflette",
+    "content": "<h3>Description</h3><p>La tartiflette est un gratin savoyard à base de pommes de terre, de reblochon, de lardons et d'oignons.</p><h3>Ingrédients</h3><ul><li>1 kg de pommes de terre</li><li>200 g de lardons</li><li>1 reblochon</li><li>1 oignon</li><li>20 cl de crème fraîche</li><li>Beurre, sel, poivre</li></ul><h3>Étapes</h3><ol><li>Faire cuire les pommes de terre en robe des champs.</li><li>Faire revenir les lardons et les oignons dans une poêle.</li><li>Couper les pommes de terre en tranches et les disposer dans un plat à gratin.</li><li>Ajouter les lardons, verser la crème et recouvrir avec le reblochon coupé en morceaux.</li><li>Cuire au four pendant 30 minutes à 180°C.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Gratin Dauphinois",
+    "content": "<h3>Description</h3><p>Le gratin dauphinois est un plat de pommes de terre crémeux et parfumé à l'ail et au beurre.</p><h3>Ingrédients</h3><ul><li>1 kg de pommes de terre</li><li>40 cl de crème fraîche</li><li>50 g de beurre</li><li>2 gousses d'ail</li><li>Sel, poivre</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Couper les pommes de terre en tranches fines.</li><li>Frotter le plat avec l'ail, y déposer les pommes de terre et ajouter la crème et le beurre.</li><li>Cuire pendant 1 heure en surveillant la dorure.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Baba au Rhum",
+    "content": "<h3>Description</h3><p>Le baba au rhum est un dessert moelleux imbibé de rhum, typique de la pâtisserie française.</p><h3>Ingrédients</h3><ul><li>200 g de farine</li><li>100 g de sucre</li><li>4 œufs</li><li>20 cl de lait</li><li>15 cl de rhum</li><li>1 sachet de levure</li><li>Crème chantilly</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Mélanger les ingrédients pour former une pâte lisse et verser dans un moule à baba.</li><li>Cuire pendant 25 minutes, puis laisser refroidir.</li><li>Imbiber le baba de rhum et servir avec de la chantilly.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Cannelés Bordelais",
+    "content": "<h3>Description</h3><p>Les cannelés sont des petits gâteaux bordelais caramélisés à l'extérieur et moelleux à l'intérieur.</p><h3>Ingrédients</h3><ul><li>250 ml de lait</li><li>100 g de sucre</li><li>2 œufs</li><li>50 g de farine</li><li>1 cuillère à soupe de rhum</li><li>1 cuillère à soupe de vanille</li></ul><h3>Étapes</h3><ol><li>Faire chauffer le lait avec la vanille et le sucre.</li><li>Ajouter les œufs battus et la farine, bien mélanger.</li><li>Ajouter le rhum et laisser reposer la pâte pendant 1 heure.</li><li>Verser dans des moules à cannelés et cuire à 200°C pendant 45 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Bouillabaisse",
+    "content": "<h3>Description</h3><p>La bouillabaisse est une soupe de poissons provençale, riche en saveurs méditerranéennes.</p><h3>Ingrédients</h3><ul><li>1 kg de poissons (idéalement de roche)</li><li>2 tomates</li><li>1 oignon</li><li>2 gousses d'ail</li><li>Safran, thym, laurier</li><li>Huile d'olive</li></ul><h3>Étapes</h3><ol><li>Faire revenir l'oignon, l'ail et les tomates dans de l'huile d'olive.</li><li>Ajouter les poissons, les herbes et de l'eau pour couvrir les ingrédients.</li><li>Laisser mijoter pendant 45 minutes, puis filtrer le bouillon.</li><li>Servir avec des croûtons de pain aillés et une rouille.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Salade de Pâtes au Pesto",
+    "content": "<h3>Description</h3><p>La salade de pâtes au pesto est une entrée fraîche et parfumée, idéale pour l'été.</p><h3>Ingrédients</h3><ul><li>250 g de pâtes</li><li>100 g de basilic frais</li><li>50 g de pignons de pin</li><li>50 g de parmesan</li><li>2 gousses d'ail</li><li>Huile d'olive</li></ul><h3>Étapes</h3><ol><li>Faire cuire les pâtes et les laisser refroidir.</li><li>Préparer le pesto en mixant le basilic, l'ail, les pignons et l'huile d'olive.</li><li>Mélanger les pâtes avec le pesto et servir froid.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Quiche Lorraine",
+    "content": "<h3>Description</h3><p>La quiche lorraine est une tarte salée composée d'un mélange d'œufs, de crème et de lardons, typique de la région Lorraine.</p><h3>Ingrédients</h3><ul><li>1 pâte brisée</li><li>200 g de lardons</li><li>3 œufs</li><li>20 cl de crème fraîche</li><li>100 g de fromage râpé</li><li>Sel, poivre, muscade</li></ul><h3>Étapes</h3><ol><li>Faire revenir les lardons dans une poêle sans matière grasse.</li><li>Dans un saladier, battre les œufs avec la crème, le sel, le poivre et la muscade.</li><li>Disposer les lardons sur la pâte, verser le mélange d'œufs et crème, puis saupoudrer de fromage râpé.</li><li>Cuire au four à 180°C pendant 30 à 40 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Ratatouille",
+    "content": "<h3>Description</h3><p>La ratatouille est un plat méditerranéen à base de légumes d'été cuits dans une sauce tomate épicée.</p><h3>Ingrédients</h3><ul><li>1 aubergine</li><li>1 courgette</li><li>1 poivron</li><li>2 tomates</li><li>1 oignon</li><li>2 gousses d'ail</li><li>Herbes de Provence, huile d'olive</li></ul><h3>Étapes</h3><ol><li>Couper tous les légumes en morceaux et les faire revenir dans de l'huile d'olive.</li><li>Ajouter l'ail et l'oignon émincés, puis les tomates coupées en dés.</li><li>Assaisonner avec les herbes de Provence et laisser mijoter 30 minutes.</li><li>Servir chaud avec du riz ou du pain.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Gratin de Courgettes",
+    "content": "<h3>Description</h3><p>Le gratin de courgettes est un plat léger et savoureux, parfait pour un accompagnement estival.</p><h3>Ingrédients</h3><ul><li>4 courgettes</li><li>50 g de fromage râpé</li><li>20 cl de crème fraîche</li><li>2 gousses d'ail</li><li>Beurre, sel, poivre</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Couper les courgettes en rondelles et les faire revenir dans une poêle avec de l'ail émincé.</li><li>Disposer les courgettes dans un plat à gratin, napper de crème et saupoudrer de fromage râpé.</li><li>Cuire au four pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Tarte Tatin",
+    "content": "<h3>Description</h3><p>La tarte Tatin est un dessert à base de pommes caramélisées, cuites à l'envers sous une pâte feuilletée.</p><h3>Ingrédients</h3><ul><li>6 pommes</li><li>100 g de sucre</li><li>50 g de beurre</li><li>1 pâte feuilletée</li><li>1 cuillère à soupe de cannelle</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Faire fondre le sucre et le beurre dans une poêle, ajouter les pommes pelées et coupées en quartiers.</li><li>Cuire jusqu'à ce que les pommes soient bien caramélisées, puis disposer dans un moule à tarte.</li><li>Recouvrir avec la pâte feuilletée et cuire au four pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Blanquette de Veau",
+    "content": "<h3>Description</h3><p>La blanquette de veau est un classique de la cuisine française, un ragoût de veau à la sauce blanche crémeuse.</p><h3>Ingrédients</h3><ul><li>800 g de veau (épaule ou tendron)</li><li>2 carottes</li><li>1 oignon</li><li>20 cl de crème fraîche</li><li>1 bouquet garni</li><li>Beurre, sel, poivre</li></ul><h3>Étapes</h3><ol><li>Faire revenir la viande dans du beurre, puis ajouter les légumes coupés en morceaux et le bouquet garni.</li><li>Couvrir d'eau et cuire pendant 1h30 à feu doux.</li><li>Retirer la viande et les légumes, puis épaissir le bouillon avec la crème.</li><li>Replacer la viande et les légumes dans la sauce, puis servir chaud.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Soupe à l'Oignon",
+    "content": "<h3>Description</h3><p>La soupe à l'oignon est une soupe réconfortante et savoureuse, souvent gratinée avec du fromage râpé.</p><h3>Ingrédients</h3><ul><li>6 oignons</li><li>1 litre de bouillon de volaille</li><li>50 g de beurre</li><li>1 baguette</li><li>100 g de fromage râpé</li><li>Sel, poivre, thym</li></ul><h3>Étapes</h3><ol><li>Faire fondre les oignons dans le beurre jusqu'à ce qu'ils soient bien dorés.</li><li>Ajouter le bouillon, assaisonner de sel, poivre et thym, puis cuire pendant 30 minutes.</li><li>Servir avec des tranches de baguette grillées et du fromage râpé fondu au four.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Crêpes Suzette",
+    "content": "<h3>Description</h3><p>Les crêpes Suzette sont des crêpes flambées au Grand Marnier, servies avec une sauce à l'orange et au beurre.</p><h3>Ingrédients</h3><ul><li>250 g de farine</li><li>3 œufs</li><li>50 g de sucre</li><li>20 cl de lait</li><li>2 oranges</li><li>50 g de beurre</li><li>1 cuillère à soupe de Grand Marnier</li></ul><h3>Étapes</h3><ol><li>Préparer une pâte à crêpes en mélangeant tous les ingrédients.</li><li>Cuire les crêpes dans une poêle chaude.</li><li>Préparer la sauce en faisant fondre le beurre avec le sucre et le jus d'orange, ajouter le Grand Marnier et flambé.</li><li>Servir les crêpes avec la sauce flambée.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Pain de Campagne",
+    "content": "<h3>Description</h3><p>Le pain de campagne est un pain rustique à la croûte épaisse et à la mie aérée, idéal pour accompagner les repas.</p><h3>Ingrédients</h3><ul><li>500 g de farine</li><li>10 g de levure de boulanger</li><li>10 g de sel</li><li>300 ml d'eau</li><li>1 cuillère à soupe d'huile d'olive</li></ul><h3>Étapes</h3><ol><li>Dans un bol, mélanger la farine, la levure et le sel.</li><li>Ajouter l'eau et l'huile, puis pétrir pendant 10 minutes.</li><li>Laisser reposer la pâte pendant 1 heure, puis façonner le pain.</li><li>Cuire à 220°C pendant 30 minutes.</li></ol>",
+    "user_id": 1
+  },
+  {
+    "title": "Clafoutis aux Cerises",
+    "content": "<h3>Description</h3><p>Le clafoutis aux cerises est un dessert léger et savoureux, avec des cerises cuites dans une pâte à crêpe.</p><h3>Ingrédients</h3><ul><li>500 g de cerises</li><li>100 g de sucre</li><li>3 œufs</li><li>50 g de farine</li><li>20 cl de lait</li><li>1 cuillère à soupe de vanille</li></ul><h3>Étapes</h3><ol><li>Préchauffer le four à 180°C.</li><li>Disposer les cerises dans un moule beurré et verser la pâte à clafoutis dessus.</li><li>Cuire pendant 40 minutes, puis servir tiède.</li></ol>",
+    "user_id": 1
+  }
+]
