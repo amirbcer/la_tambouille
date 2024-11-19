@@ -146,4 +146,6 @@ Le front tourne sur le port `localhost:5173`.
 
 - Optimiser l'affichage en mode responsive.
 
-- Création de composants réutilisables pour respecter le principe DRY (Don't Repeat Yourself) dans le développement.
+- Création de composants réutilisables pour respecter le principe DRY dans le développement.
+
+- Meilleure gestion de la validation des formulaires cotés front en utilisant une lib zod ou yup.
