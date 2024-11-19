@@ -1,14 +1,18 @@
 # La Tambouille
 
-## App Demo
+## Liens utiles
+
+### Demo App
 
 https://la-tambouille.fly.dev
 
-## Accès au Trello
-
-Pour accéder au tableau Trello du projet, c'est par ici :
+### Tableau Trello du projet
 
 https://trello.com/b/fgqgG5HS/la-tambouille
+
+### Collection Postman
+
+[Lien vers la collection](docs/postman/La%20Tambouille.postman_collection.json)
 
 ## Installation (dev local)
 

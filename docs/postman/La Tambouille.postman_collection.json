@@ -1,0 +1,383 @@
+{
+  "info": {
+    "_postman_id": "e0bb3205-ea64-497f-a138-4e52573cc2b4",
+    "name": "La Tambouille",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "4554899"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "login",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [""],
+                "type": "text/javascript",
+                "packages": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email_address\": \"tom@latambouille.fr\",\n    \"password\": \"Tomtom!\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/session",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "session"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update password",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [""],
+                "type": "text/javascript",
+                "packages": {}
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"password\": \"password\",\n    \"new_password\": \"password_changed\",\n    \"password_confirmation\": \"password_changed\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users/1/update_password",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users", "1", "update_password"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "current user",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [""],
+                "type": "text/javascript",
+                "packages": {}
+              }
+            }
+          ],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/session",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "session"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "logout",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/session",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "session"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"user\": {\n        \"name\": \"Tom\",\n        \"email_address\": \"tom@latambouille.fr\",\n        \"password\": \"Tomtom!\",\n        \"password_confirmation\": \"Tomtom!\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Public Recipes",
+      "item": [
+        {
+          "name": "get public recipes",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/recipes?page=1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "recipes"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get recipe by Id",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/recipes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "recipes", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User Recipes",
+      "item": [
+        {
+          "name": "create recipe",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "recipe[title]",
+                  "value": "Gratin dauphinois",
+                  "type": "text"
+                },
+                {
+                  "key": "recipe[content]",
+                  "value": "<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Selon l'étude, 14,35 % de toutes les visites de site aboutissent à un achat.</span></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Bien qu'il soit possible de convertir sans jamais visiter une page produit, la probabilité reste faible. 92,4 % des conversions ont eu lieu après la visite d'une page produit, même si les clients ont utilisé le bouton \"Acheter maintenant\".</span></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Si nous ne prenons en compte que les transactions du panier, voici comment cela se décompose.</span></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">11,94 % de toutes les sessions comprennent au moins un clic d'ajout au panier : ce qui signifie qu'une forte majorité n'arrive jamais à ce stade. Mais une fois que les utilisateurs ont cliqué sur \"Ajouter au panier\", ils ont deux options :</span></p>\n<ul>\n<li style=\"margin-left:0px;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">68,05 % des paniers aboutissent à un achat (8,12 % des sessions) </span></li>\n<li style=\"margin-left:0px;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">31,95 % des paniers sont abandonnés (3,81 % des sessions) </span></li>\n</ul>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Pour les vendeurs, cela signifie que si vous convainquez le client de cliquer sur ce bouton, vous avez de fortes chances de le convertir.</span></p>\n<h2 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 42px;font-family: Factor A\", Ubuntu, Helvetica, Arial, sans-serif;\">Le Chemin de la Conversion : Comment les Utilisateurs se Comportent sur Amazon.com</span></h2>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">L'utilisateur moyen effectue trois recherches et visite six pages produits avant de terminer son achat. À titre de comparaison, il suffit de deux recherches et de quatre visites de pages produits pour que l'utilisateur moyen clique sur \"Ajouter au panier.\"</span></p>\n<p></p>\n<p></p>\n<img src=\"https://static.semrush.com/blog/uploads/media/e0/7d/e07d492a814edd62cd46a07f3e7a7ed0/FR-Study-Amazon-General-Stats-2.webp\" alt=\"undefined\" style=\"height: auto;width: auto\"/>\n<p></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Voici une répartition plus détaillée du comportement typique des utilisateurs :</span></p>\n",
+                  "type": "text"
+                },
+                {
+                  "key": "recipe[picture]",
+                  "type": "file",
+                  "src": []
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users/1/recipes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users", "1", "recipes"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update recipe",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "recipe[title]",
+                  "value": "Gratin dauphinois",
+                  "type": "text"
+                },
+                {
+                  "key": "recipe[content]",
+                  "value": "<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Selon l'étude, 14,35 % de toutes les visites de site aboutissent à un achat.</span></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Bien qu'il soit possible de convertir sans jamais visiter une page produit, la probabilité reste faible. 92,4 % des conversions ont eu lieu après la visite d'une page produit, même si les clients ont utilisé le bouton \"Acheter maintenant\".</span></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Si nous ne prenons en compte que les transactions du panier, voici comment cela se décompose.</span></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">11,94 % de toutes les sessions comprennent au moins un clic d'ajout au panier : ce qui signifie qu'une forte majorité n'arrive jamais à ce stade. Mais une fois que les utilisateurs ont cliqué sur \"Ajouter au panier\", ils ont deux options :</span></p>\n<ul>\n<li style=\"margin-left:0px;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">68,05 % des paniers aboutissent à un achat (8,12 % des sessions) </span></li>\n<li style=\"margin-left:0px;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">31,95 % des paniers sont abandonnés (3,81 % des sessions) </span></li>\n</ul>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Pour les vendeurs, cela signifie que si vous convainquez le client de cliquer sur ce bouton, vous avez de fortes chances de le convertir.</span></p>\n<h2 style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 42px;font-family: Factor A\", Ubuntu, Helvetica, Arial, sans-serif;\">Le Chemin de la Conversion : Comment les Utilisateurs se Comportent sur Amazon.com</span></h2>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">L'utilisateur moyen effectue trois recherches et visite six pages produits avant de terminer son achat. À titre de comparaison, il suffit de deux recherches et de quatre visites de pages produits pour que l'utilisateur moyen clique sur \"Ajouter au panier.\"</span></p>\n<p></p>\n<p></p>\n<img src=\"https://static.semrush.com/blog/uploads/media/e0/7d/e07d492a814edd62cd46a07f3e7a7ed0/FR-Study-Amazon-General-Stats-2.webp\" alt=\"undefined\" style=\"height: auto;width: auto\"/>\n<p></p>\n<p style=\"text-align:start;\"><span style=\"color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 20.4;font-family: Inter, Ubuntu, Helvetica, Arial, sans-serif;\">Voici une répartition plus détaillée du comportement typique des utilisateurs :</span></p>\n",
+                  "type": "text"
+                },
+                {
+                  "key": "recipe[picture]",
+                  "type": "file",
+                  "src": []
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users/1/recipes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users", "1", "recipes", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete recipe",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users/1/recipes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users", "1", "recipes", "1"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get all user recipes",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users/1/recipes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users", "1", "recipes"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get user recipe by id",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/users/1/recipes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "v1", "users", "1", "recipes", "1"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [""]
+      }
+    }
+  ]
+}
