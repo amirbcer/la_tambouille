@@ -3,6 +3,7 @@ import { Button, Card, Input } from 'react-daisyui';
 import { TiArrowBack } from 'react-icons/ti';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Message } from '../models/Message';
+import { wsUrl } from '../services/ApiService';
 import { chatService } from '../services/ChatService';
 
 function RecipeChat() {
@@ -16,7 +17,6 @@ function RecipeChat() {
   const scrollToBottom = () => scrollToEndRef.current?.scrollIntoView({ behavior: 'smooth' });
 
   const initWebSocket = useCallback(() => {
-    const wsUrl = import.meta.env.DEV ? 'ws://localhost:3000/cable' : 'wss://la-tambouille.fly.dev/cable';
     const ws = new WebSocket(wsUrl);
     console.log('Connected to WebSocket for recipe', recipeId);
 

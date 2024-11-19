@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Button, Navbar } from 'react-daisyui';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthProvider';
@@ -8,12 +7,6 @@ function RecipeNavbar() {
   const navigate = useNavigate();
   const navigateTo = (path: string) => navigate(path);
   const logout = () => auth?.logout();
-
-  useEffect(() => {
-    if (!auth?.currentUser) {
-      auth?.checkSession();
-    }
-  }, [auth]);
 
   return (
     <Navbar className="flex w-full fixed z-10 shadow justify-between items-center p-5 bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -37,7 +30,7 @@ function RecipeNavbar() {
       ) : (
         <Button
           size="sm"
-          className="bg-white hover:bg-blue-100 text-blue-500 font-semibold rounded "
+          className="bg-white hover:bg-blue-100 text-blue-500 font-semibold rounded"
           onClick={() => navigateTo('/login')}
         >
           Se connecter

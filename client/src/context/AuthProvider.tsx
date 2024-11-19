@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import { createContext, ReactNode, useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LoginParams } from '../models/Auth';
 import { User } from '../models/User';
@@ -10,6 +10,7 @@ interface AuthProviderProps {
 
 interface AuthContextType {
   currentUser: User | null;
+  loading: boolean;
   checkSession: () => Promise<void>;
   // eslint-disable-next-line no-unused-vars
   login: (params: LoginParams) => Promise<void>;
@@ -21,6 +22,15 @@ const AuthContext = createContext<AuthContextType | null>(null);
 const AuthProvider = ({ children }: AuthProviderProps) => {
   const navigate = useNavigate();
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  const hasSession = localStorage.getItem('hasSession');
+
+  useEffect(() => {
+    if (hasSession !== null) {
+      checkSession();
+    }
+  }, [hasSession]);
 
   const checkSession = async () => {
     try {
@@ -34,6 +44,8 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
       throw new Error(data.message);
     } catch (err) {
       console.error(err);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -41,6 +53,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     const response = await apiService.post('session.json', user);
     if (response.status === 200) {
       setCurrentUser(response.data.user);
+      localStorage.setItem('hasSession', 'true');
 
       navigate('/recipes');
       return;
@@ -53,6 +66,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
 
       if (status === 200) {
         setCurrentUser(null);
+        localStorage.removeItem('hasSession');
 
         navigate('/login');
         return;
@@ -64,7 +78,11 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     }
   };
 
-  return <AuthContext.Provider value={{ currentUser, checkSession, login, logout }}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider value={{ currentUser, loading, checkSession, login, logout }}>
+      {children}
+    </AuthContext.Provider>
+  );
 };
 
 export default AuthProvider;
