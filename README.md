@@ -1,26 +1,36 @@
 # La Tambouille
 
-## Installation
+## App Demo
 
-Pour démarrer l'application avec Docker :
-
-```sh
-docker compose up
-```
-
-Pour réinitialiser la base de donnée :
-
-```sh
-docker compose exec web bundle exec rails db:prepare
-```
-
-l'API tourne sur `localhost:3000`.
+https://la-tambouille.fly.dev
 
 ## Accès au Trello
 
 Pour accéder au tableau Trello du projet, c'est par ici :
 
 https://trello.com/b/fgqgG5HS/la-tambouille
+
+## Installation (dev local)
+
+### Backend
+
+Pour démarrer l'application avec Docker :
+
+```sh
+docker compose up --build
+```
+
+L'API tourne sur le port `localhost:3000`.
+
+### Frontend
+
+Pour démarrer le front avec React et Vite :
+
+```sh
+cd client && npm run dev
+```
+
+Le front tourne sur le port `localhost:5173`.
 
 ## Récits utilisateurs (user stories)
 
@@ -109,3 +119,27 @@ https://trello.com/b/fgqgG5HS/la-tambouille
         Lorsque je clique sur le bouton "Déconnexion"
         Alors je suis déconnecté de mon compte
         Et je suis redirigé vers la liste publique des recettes
+
+# Améliorations possibles
+
+## Fonctionnelles
+
+- Gestion d'un compte utilisateur admin permettant de modérer les recettes postées et les messages dans les différents chats.
+
+- Permettre à l'utilisateur de réinitialiser son mot de passe en cas d'oubli ou via son espace privé (avec envoi d'un email de vérification).
+
+- Création de profils utilisateurs consultables par autrui, permettant de voir uniquement les recettes de ce profil.
+
+- Permettre la recherche de recettes par différents critères (nom de la recette, ingrédients, auteur, etc.).
+
+- Permettre à l'utilisateur de supprimer son compte.
+
+## Techniques
+
+- Utiliser l'Asset Pipeline de Rails pour gérer toutes les ressources front-end (JavaScript, CSS, images, etc.) dans un même système.
+
+- Améliorer la gestion et l'affichage des erreurs backend.
+
+- Optimiser l'affichage en mode responsive.
+
+- Création de composants réutilisables pour respecter le principe DRY (Don't Repeat Yourself) dans le développement.
