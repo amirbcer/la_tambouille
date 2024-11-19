@@ -12,9 +12,9 @@ puts "Seeding database '#{ActiveRecord::Base.connection.current_database}'"
 
 # Create a user
 User.create(
-  email_address: "test@latambouille.com",
-  password: "latambouille69",
-  name: "Johnny Love"
+  name: "Chef Amir",
+  email_address: "amir@latambouille.fr",
+  password: "ChangeMePassw0rd!",
 )
 
 # Create recipes
