@@ -29,7 +29,7 @@ function RecipeDetails({ recipe, openChat }: RecipeDetailsProps) {
         <div className="flex flex-row items-center justify-between">
           <div className="flex flex-col text-start">
             <span className="text-2xl font-semibold">{recipe.title}</span>
-            <span className="text-md font-semibold">Recette postée par {recipe.author}</span>
+            <span className="text-md font-semibold">Recette proposée par {recipe.author}</span>
           </div>
 
           {!auth?.currentUser ? (

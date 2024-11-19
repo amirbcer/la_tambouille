@@ -68,7 +68,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
         setCurrentUser(null);
         localStorage.removeItem('hasSession');
 
-        navigate('/login');
+        navigate('/recipes');
         return;
       }
 

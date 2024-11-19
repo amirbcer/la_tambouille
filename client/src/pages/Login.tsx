@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import LoginForm from '../components/auth/LoginForm';
 import { useAuth } from '../context/AuthProvider';
@@ -11,13 +11,16 @@ function Login() {
   const navigate = useNavigate();
   const { showToast, ToastComponent } = useToast();
   const hasShownToast = useRef(false);
-
+  const [loading, setLoading] = useState(false);
   const handleLogin = async (params: LoginParams) => {
     try {
+      setLoading(true);
       await auth?.login(params);
     } catch (error) {
       showToast({ message: 'Email ou mot de passe incorrect.', type: 'error' });
       console.error(error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -35,7 +38,7 @@ function Login() {
 
   return (
     <div className="flex items-center px-16">
-      <LoginForm onSubmit={handleLogin} />
+      <LoginForm loading={loading} onSubmit={handleLogin} />
       <ToastComponent />
     </div>
   );

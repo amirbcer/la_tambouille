@@ -3,11 +3,12 @@ import { Button, Card, Input } from 'react-daisyui';
 import { LoginParams } from '../../models/Auth';
 
 interface LoginFormProps {
+  loading: boolean;
   // eslint-disable-next-line no-unused-vars
   onSubmit: (params: LoginParams) => void;
 }
 
-function LoginForm({ onSubmit }: LoginFormProps) {
+function LoginForm({ loading, onSubmit }: LoginFormProps) {
   const [input, setInput] = useState<LoginParams>({
     email_address: '',
     password: '',
@@ -65,7 +66,9 @@ function LoginForm({ onSubmit }: LoginFormProps) {
           </div>
 
           <Card.Actions className="w-full space-y-2">
-            <Button className=" bg-blue-500 hover:bg-blue-600 w-full text-white font-bold">Se connecter</Button>
+            <Button loading={loading} className=" bg-blue-500 hover:bg-blue-600 w-full text-white font-bold">
+              Se connecter
+            </Button>
             <p className="text-sm text-gray-500 font-medium">
               Pas encore de compte ?
               <a href="/register" className="font-medium text-blue-500 hover:underline m-2">
